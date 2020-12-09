@@ -38,10 +38,9 @@ function checkRequired(inputArr) {
     })
 }
 
-
 function checkLength(input, min, max) {
     if(input.value.length < min) {
-        showError(input, `${getFiledName(input)} must be at least ${min} characters}`)
+        showError(input, `${getFiledName(input)} must be at least ${min} characters`)
     } else if (input.value.length > max) {
         showError(input, `${getFiledName(input)} must be shorter than ${max} characters`)
     } else {
